@@ -428,7 +428,8 @@
                                   color: #777777;
                                   line-height: 24px;
                                 "
-                                >{{ .To }}</span
+                                >{{ .Identity.traits.name.first }} {{
+                                .Identity.traits.name.last }}.</span
                               ><span
                                 style="
                                   font-size: 16px;
@@ -438,10 +439,23 @@
                                   line-height: 24px;
                                 "
                               >
-                                Thank you for signing up to the Authority -
-                                please verify your credential identifier to
-                                receive access to the Net-Terminal.</span
+                                Thank you for signing up your email address {{
+                                .To }} at the Authority - please verify your
+                                credential identifier to receive access to the
+                                Net-Terminal.</span
+                              ><span
+                                style="
+                                  font-size: 16px;
+                                  font-family: Inter, Arial, sans-serif;
+                                  font-weight: 400;
+                                  color: #777777;
+                                  line-height: 24px;
+                                "
                               >
+                                The authority respects that you are a follower
+                                of the cult of {{ .Identity.traits.animal }},
+                                Many blessings to you!
+                              </span>
                             </p>
                             <p style="margin: 0">
                               <span

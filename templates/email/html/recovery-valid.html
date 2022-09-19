@@ -393,8 +393,11 @@
                                   color: #000000;
                                   line-height: 32px;
                                 "
-                                >Recover access to your Net-Terminal</span
-                              >
+                                >Hello {{ .Identity.traits.name.first }} {{
+                                .Identity.traits.name.last }}, please recover
+                                access to your Net-Terminal. The {{
+                                .Identity.traits.animal }} cult salutes you!
+                              </span>
                             </p>
                           </div>
                         </td>
